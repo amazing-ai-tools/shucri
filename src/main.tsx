@@ -15,18 +15,18 @@ type Member = {
   role: string;
 };
 
-// The Fellowship — shucri squad (Lord of the Rings theme).
+// The Pink Fellowship — shucri squad (Hello Kitty × God of War fusions).
 const fellowship: Member[] = [
-  { emoji: '👔', name: 'Gandalf', role: 'CEO' },
-  { emoji: '📋', name: 'Aragorn', role: 'PM' },
-  { emoji: '📣', name: 'Legolas', role: 'Marketing' },
-  { emoji: '🔧', name: 'Gimli', role: 'Backend' },
-  { emoji: '🎨', name: 'Galadriel', role: 'Frontend' },
-  { emoji: '🧪', name: 'Samwise', role: 'QA' },
-  { emoji: '🔍', name: 'Elrond', role: 'Reviewer' },
-  { emoji: '🤖', name: 'Saruman', role: 'AI / Runner' },
-  { emoji: '🏗️', name: 'Sauron', role: 'Infra / DevOps' },
-  { emoji: '🔒', name: 'Saruman 🔮', role: 'Security' },
+  { emoji: '👔', name: 'Krattos', role: 'CEO' },
+  { emoji: '📋', name: 'Pompomir', role: 'PM' },
+  { emoji: '📣', name: 'Melodreus', role: 'Marketing' },
+  { emoji: '🔧', name: 'Pochindri', role: 'Backend' },
+  { emoji: '🎨', name: 'Cinnafreya', role: 'Frontend' },
+  { emoji: '🧪', name: 'Kerotyr', role: 'QA' },
+  { emoji: '🔍', name: 'Chocodin', role: 'Reviewer' },
+  { emoji: '🤖', name: 'Gudetangr', role: 'AI / Runner' },
+  { emoji: '🏗️', name: 'Badtzthor', role: 'Infra / DevOps' },
+  { emoji: '🔒', name: 'Kurobaldur', role: 'Security' },
 ];
 
 function ensureBugZeroWidget() {
@@ -154,7 +154,7 @@ function App() {
         <div className="team-head">
           <span className="eyebrow team-eyebrow">The Pink Fellowship 🌸</span>
           <h2>Meet the squad</h2>
-          <p>Ten agents — one quest. The Lord of the Rings crew shipping this app.</p>
+          <p>Ten agents — one quest. The Hello Kitty × God of War crew shipping this app.</p>
         </div>
         <div className="team-grid">
           {fellowship.map((member) => (
