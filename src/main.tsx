@@ -42,63 +42,59 @@ function ensureBugZeroWidget() {
   document.body.appendChild(script);
 }
 
-// God of War × Hello Kitty: a cute kitty face wearing Kratos' red war paint,
-// flanked by the crossed Blades of Chaos.
+// God of War × Hello Kitty — Kitty-led: a soft Hello Kitty is the star, with
+// God of War reduced to two subtle nods — a slim Kratos red war-stripe over one
+// eye and a tiny crossed Blades of Chaos charm nestled in her signature bow.
 function KittyOfWarLogo() {
   return (
     <svg
       className="logo-mark"
       viewBox="0 0 120 120"
       role="img"
-      aria-label="God of War meets Hello Kitty logo"
+      aria-label="Hello Kitty with a subtle Kratos war-stripe logo"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Crossed Blades of Chaos behind the head */}
-      <g stroke="#7f1d1d" strokeWidth="2" strokeLinecap="round">
-        <line x1="26" y1="96" x2="74" y2="22" stroke="#c2410c" strokeWidth="5" />
-        <line x1="94" y1="96" x2="46" y2="22" stroke="#c2410c" strokeWidth="5" />
-      </g>
-      <g fill="#e5e7eb" stroke="#9ca3af" strokeWidth="1.5" strokeLinejoin="round">
-        <path d="M74 22 L70 12 L80 16 L78 26 Z" />
-        <path d="M46 22 L50 12 L40 16 L42 26 Z" />
-      </g>
-
       {/* Ears */}
-      <path d="M22 46 L40 14 L54 42 Z" fill="#ffffff" stroke="#be185d" strokeWidth="2" strokeLinejoin="round" />
-      <path d="M98 46 L80 14 L66 42 Z" fill="#ffffff" stroke="#be185d" strokeWidth="2" strokeLinejoin="round" />
+      <path d="M20 44 L38 12 L54 42 Z" fill="#ffffff" stroke="#be185d" strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M100 44 L82 12 L66 42 Z" fill="#ffffff" stroke="#be185d" strokeWidth="2.5" strokeLinejoin="round" />
 
       {/* Head */}
-      <ellipse cx="60" cy="66" rx="44" ry="36" fill="#ffffff" stroke="#be185d" strokeWidth="2.5" />
+      <ellipse cx="60" cy="64" rx="46" ry="38" fill="#ffffff" stroke="#be185d" strokeWidth="2.5" />
 
-      {/* Kratos red war paint — diagonal slash across the left eye */}
-      <path
-        d="M40 34 C44 48 46 64 44 92 L52 92 C53 64 51 48 48 34 Z"
-        fill="#dc2626"
-        opacity="0.92"
-      />
+      {/* Blush cheeks */}
+      <ellipse cx="33" cy="74" rx="6.5" ry="3.8" fill="#fbb6ce" opacity="0.85" />
+      <ellipse cx="87" cy="74" rx="6.5" ry="3.8" fill="#fbb6ce" opacity="0.85" />
+
+      {/* Kratos red war-stripe — slim, framing the left eye */}
+      <path d="M43 36 C46 50 46 62 44 86 L49 86 C50 62 50 50 47.5 36 Z" fill="#dc2626" opacity="0.9" />
 
       {/* Eyes */}
-      <ellipse cx="46" cy="68" rx="3.6" ry="6" fill="#1f2937" />
-      <ellipse cx="74" cy="68" rx="3.6" ry="6" fill="#1f2937" />
+      <ellipse cx="46" cy="66" rx="4" ry="6.4" fill="#1f2937" />
+      <ellipse cx="74" cy="66" rx="4" ry="6.4" fill="#1f2937" />
 
       {/* Nose */}
-      <ellipse cx="60" cy="79" rx="5" ry="3.4" fill="#fbbf24" stroke="#d97706" strokeWidth="1" />
+      <ellipse cx="60" cy="76" rx="5" ry="3.4" fill="#fbbf24" stroke="#d97706" strokeWidth="1" />
 
       {/* Whiskers */}
-      <g stroke="#4b5563" strokeWidth="2" strokeLinecap="round">
-        <line x1="30" y1="70" x2="12" y2="66" />
-        <line x1="30" y1="77" x2="11" y2="78" />
-        <line x1="30" y1="84" x2="13" y2="90" />
-        <line x1="90" y1="70" x2="108" y2="66" />
-        <line x1="90" y1="77" x2="109" y2="78" />
-        <line x1="90" y1="84" x2="107" y2="90" />
+      <g stroke="#9ca3af" strokeWidth="2" strokeLinecap="round">
+        <line x1="29" y1="66" x2="10" y2="62" />
+        <line x1="29" y1="73" x2="9" y2="74" />
+        <line x1="29" y1="80" x2="11" y2="86" />
+        <line x1="91" y1="66" x2="110" y2="62" />
+        <line x1="91" y1="73" x2="111" y2="74" />
+        <line x1="91" y1="80" x2="109" y2="86" />
       </g>
 
-      {/* Hello Kitty signature bow on the right ear */}
+      {/* Signature bow on the right ear, with a tiny crossed Blades of Chaos charm */}
       <g>
-        <path d="M84 30 L72 22 L72 40 Z" fill="#ec4899" stroke="#9d174d" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M84 30 L96 22 L96 40 Z" fill="#ec4899" stroke="#9d174d" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="84" cy="31" r="4.5" fill="#db2777" stroke="#9d174d" strokeWidth="1.5" />
+        <path d="M86 30 L72 21 L72 41 Z" fill="#ec4899" stroke="#9d174d" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M86 30 L100 21 L100 41 Z" fill="#ec4899" stroke="#9d174d" strokeWidth="1.5" strokeLinejoin="round" />
+        <circle cx="86" cy="30" r="5" fill="#db2777" stroke="#9d174d" strokeWidth="1.5" />
+        {/* crossed Blades of Chaos — tiny gold X peeking from the knot */}
+        <g stroke="#fde68a" strokeWidth="1.6" strokeLinecap="round">
+          <line x1="80" y1="36" x2="92" y2="24" />
+          <line x1="92" y1="36" x2="80" y2="24" />
+        </g>
       </g>
     </svg>
   );
